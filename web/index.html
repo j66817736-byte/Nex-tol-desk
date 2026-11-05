@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101720">
+  <title>Nex-tol Desk · Control</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <a class="brand" href="/" aria-label="Nex-tol Desk inicio"><span class="brand-mark">N</span><span>NEX-TOL<span class="brand-sub">CONTROL DESK</span></span></a>
+      <div class="nav-label">ESPACIO DE TRABAJO</div>
+      <nav><a class="nav-item active" href="#overview"><span>▦</span> Panel general</a><a class="nav-item" href="#modules"><span>◫</span> Módulos</a><a class="nav-item" href="#activity"><span>◷</span> Actividad</a></nav>
+      <div class="sidebar-bottom"><span class="status-dot"></span><span id="service-status">Conectando…</span><span class="local-label">LOCAL</span></div>
+    </aside>
+    <main>
+      <header class="topbar"><div><span class="eyebrow">CONTROL MAESTRO / INICIO</span><h1>Panel de control</h1></div><div class="topbar-right"><span class="private-badge"><span class="status-dot"></span> Base personal desconectada</span><span class="avatar">N</span></div></header>
+      <section id="overview" class="welcome"><div><span class="eyebrow">CENTRO DE OPERACIONES</span><h2>Tu espacio de trabajo,<br><em>claro y bajo control.</em></h2><p>Observa los módulos, revisa el estado y ejecuta el flujo demostrativo. Esta versión no conecta a tu base personal.</p><button id="run-diagnostic" class="primary-button">Ejecutar diagnóstico de prueba <span>→</span></button></div><div class="welcome-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="core">N<span>+</span></div><div class="orbit-node node-one"></div><div class="orbit-node node-two"></div><div class="orbit-node node-three"></div></div></section>
+      <section class="section-heading" id="modules"><div><span class="eyebrow">VISTA DEL SISTEMA</span><h2>Módulos</h2></div><span class="subtle">Estado de la estructura</span></section>
+      <section class="module-grid" id="module-grid" aria-live="polite"><div class="loading">Cargando módulos…</div></section>
+      <section class="section-heading activity-heading" id="activity"><div><span class="eyebrow">TRAZABILIDAD</span><h2>Actividad reciente</h2></div><span id="job-count" class="subtle">0 ejecuciones</span></section>
+      <section class="activity-card"><div class="activity-top"><div><strong>Flujo de diagnóstico</strong><p>Validación → clasificación → causa/efecto → informe</p></div><span class="demo-tag">DEMOSTRACIÓN</span></div><div id="activity-list" class="activity-list"><p class="empty-state">Aún no hay ejecuciones. Prueba el diagnóstico para ver el proceso y sus resultados.</p></div></section>
+      <footer>Hecho para crecer por módulos <span>·</span> Sin base personal conectada</footer>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
